@@ -1,10 +1,12 @@
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet, View, Text, Pressable } from 'react-native'
 import React from 'react'
 
 const AddButton = () => {
   return (
     <View style={styles.buttons}>
-        <Text>+</Text>
+        <Pressable onPress={() => console.log("Button Pressed")} style={{width:"100%", height:"100%", display:"flex", justifyContent:"center", alignItems:"center"}}>
+        <Text style={styles.texts}>+</Text>
+        </Pressable>
     </View>
   )
 }
@@ -23,6 +25,17 @@ const styles = StyleSheet.create({
         alignSelf:"flex-end",
         marginRight:15,
         marginBottom:13,
+        color:"white",
+        fontSize:20,
+    },
 
+    texts:{
+        color:"white",
+        fontSize:50,
+        textAlign:"center",
+        justifyContent:"center",
+        marginTop:-21 ,
     }
+
+
 })

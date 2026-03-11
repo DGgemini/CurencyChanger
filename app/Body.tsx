@@ -24,6 +24,6 @@ export default Body
 const styles = StyleSheet.create({
     Body:{
         flex:1,
-        backgroundColor:"white"
+        backgroundColor:"darkgray"
     }
 })

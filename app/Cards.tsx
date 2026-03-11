@@ -21,7 +21,7 @@ Cards:{
     borderColor:"black",
     borderWidth:1,
     height:80,
-    boxShadow:"2px 5px 5px rgba(0, 0, 0, 0.25)",
+    boxShadow:"2px 5px 5px rgb(255, 255, 255)",
     padding:10,
 }
 })
