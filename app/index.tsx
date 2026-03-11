@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import TopBar from './topBar'
+import Body from './Body'
 
 const Home = () => {
   return (
-    <View style={styles.Center}>
-      <Text>Currency
-         Conversion</Text>
+    <View style={styles.Nav}>
+      <TopBar />
+      <Body />
     </View>
   )
 }
@@ -13,9 +15,8 @@ const Home = () => {
 export default Home
 
 const styles = StyleSheet.create({
-    Center: {
+    Nav: {
         flex: 1,
-       justifyContent: 'center',
-        alignItems: 'center'
+    
     }
 })
