@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
         justifyContent:"center",
         alignItems:"center",
         alignSelf:"flex-end",
-        margin:13,
-    
+        marginRight:15,
+        marginBottom:13,
+
     }
 })

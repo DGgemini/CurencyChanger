@@ -13,6 +13,7 @@ const numCards = () => {
 const Body = () => {
   return (
     <View style={styles.Body}>
+    
        {numCards()}   
     </View>
   )

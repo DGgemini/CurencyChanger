@@ -5,7 +5,8 @@ import AddButton from './addButton'
 const TopBar = () => {
   return (
     <View style={styles.Nav}>
-      <AddButton />
+      <Text style={styles.Title}>Changer</Text> 
+       <AddButton /> 
     </View>
   )
 }
@@ -17,5 +18,17 @@ const styles = StyleSheet.create({
         backgroundColor:"dodgerblue",
         width:"100%",
         height:64,
-    }
+        display:"flex",
+        flexDirection:"row",
+        justifyContent:"space-between",
+      
+        
+    },
+    Title:{
+        fontSize:30,
+        fontWeight:"bold",
+        color:"white",
+        alignSelf:"center",
+       marginLeft:130,
+    } 
 })
