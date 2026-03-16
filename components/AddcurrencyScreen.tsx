@@ -1,12 +1,12 @@
 import { StyleSheet,View, Text, Modal, Pressable } from 'react-native'
 import React from 'react'
-import { Picker } from '@react-native-picker/picker';
+import Dropdowns from './Dropdown';
 
 type addCurrencyScreenProps = {
     visible: boolean;
     onClose: () => void;
 }
-const currencies = ["USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CHF", "CNY", "SEK", "NZD"];
+
 
 const AddcurrencyScreen = ({ visible, onClose }: addCurrencyScreenProps) => {
   return (
@@ -17,12 +17,9 @@ const AddcurrencyScreen = ({ visible, onClose }: addCurrencyScreenProps) => {
                 <View>
                     <Text style={{fontSize:20, fontWeight:"bold", margin:10, textDecorationLine:"underline"}}>Add Currency</Text>
                     <Text>From</Text>
-                    <Picker>
-                        {currencies.map((currency) => (
-                            <Picker.Item label={currency} value={currency} key={currency} />
-                        ))}
-                    </Picker>
+                    <Dropdowns />
                     <Text>To</Text>
+                    <Dropdowns />
                 </View>
             </Pressable>
         </Pressable>

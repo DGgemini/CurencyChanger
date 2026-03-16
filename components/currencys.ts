@@ -175,3 +175,5 @@ export const currencies: Currency[] = [
   { code: "ZWG", name: "Zimbabwe Gold", symbol: "ZiG", symbolPosition: "prefix" },
   { code: "ZWL", name: "Zimbabwe Dollar", symbol: "Z$", symbolPosition: "prefix" },
 ];
+
+export default currencies
