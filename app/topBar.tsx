@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import AddButton from './addButton'
+import AddButton from '../components/addButton'
 
 const TopBar = () => {
   return (
@@ -21,7 +21,9 @@ const styles = StyleSheet.create({
         display:"flex",
         flexDirection:"row",
         justifyContent:"space-between",
-      
+        borderColor:"black",
+        borderWidth:1,
+        borderBottomWidth:1.5,
         
     },
     Title:{
