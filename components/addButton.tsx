@@ -1,10 +1,18 @@
 import { StyleSheet, View, Text, Pressable } from 'react-native'
-import React from 'react'
+import React, {useState} from 'react'
+import AddcurrencyScreen from './AddcurrencyScreen';
+
+
 
 const AddButton = () => {
+    const[visible, setVisible] = useState(false);
   return (
+  
+   
     <View style={styles.buttons}>
-        <Pressable onPress={() => console.log("Button Pressed")} style={{width:"100%", height:"100%", display:"flex", justifyContent:"center", alignItems:"center"}}>
+         <AddcurrencyScreen visible={visible} onClose={() => setVisible(false)} />
+        <Pressable onPress={() => setVisible(true)} style={{width:"100%", height:"100%", display:"flex", justifyContent:"center", alignItems:"center"}}>
+         
         <Text style={styles.texts}>+</Text>
         </Pressable>
     </View>

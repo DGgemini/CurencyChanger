@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Cards from './Cards'
+import Cards from '../components/Cards'
 
 const numCards = () => {
     const cards = [];
