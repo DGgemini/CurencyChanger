@@ -1,6 +1,7 @@
 import { StyleSheet,View, Text, Modal, Pressable } from 'react-native'
 import React from 'react'
 import Dropdowns from './Dropdown';
+import SaveButton from './savebutton';
 
 type addCurrencyScreenProps = {
     visible: boolean;
@@ -8,7 +9,7 @@ type addCurrencyScreenProps = {
 }
 
 
-const AddcurrencyScreen = ({ visible, onClose }: addCurrencyScreenProps) => {
+const AddCurrencyModul = ({ visible, onClose }: addCurrencyScreenProps) => {
   return (
     <Modal visible={visible} animationType="fade" transparent={true}>
         <View style={styles.Backdrop}>
@@ -20,6 +21,7 @@ const AddcurrencyScreen = ({ visible, onClose }: addCurrencyScreenProps) => {
                     <Dropdowns />
                     <Text>To</Text>
                     <Dropdowns />
+                    <SaveButton />  
                 </View>
             </Pressable>
         </Pressable>
@@ -28,7 +30,7 @@ const AddcurrencyScreen = ({ visible, onClose }: addCurrencyScreenProps) => {
   )
 }
 
-export default AddcurrencyScreen 
+export default AddCurrencyModul 
 
 const styles = StyleSheet.create({
     Backdrop:{

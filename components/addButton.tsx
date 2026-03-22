@@ -1,16 +1,16 @@
 import { StyleSheet, View, Text, Pressable } from 'react-native'
 import React, {useState} from 'react'
-import AddcurrencyScreen from './AddcurrencyScreen';
+import AddCurrencyModul from './AddCurrencyModul';
 
 
 
 const AddButton = () => {
     const[visible, setVisible] = useState(false);
-  return (
+  return (  
   
    
     <View style={styles.buttons}>
-         <AddcurrencyScreen visible={visible} onClose={() => setVisible(false)} />
+         <AddCurrencyModul visible={visible} onClose={() => setVisible(false)} />
         <Pressable onPress={() => setVisible(true)} style={{width:"100%", height:"100%", display:"flex", justifyContent:"center", alignItems:"center"}}>
          
         <Text style={styles.texts}>+</Text>
